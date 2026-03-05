@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpower Garage | Servicing, MOT & Diagnostics in London</title>
+    <meta name="description"
+        content="Professional and affordable car servicing, engine diagnostics, MOT, and mechanical repairs in London NW10. Book your vehicle health check today at M Power Motors Limited.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .inner-hero {
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background: url('images/garage inside .png') center/cover;
+            padding-top: 80px;
+        }
+
+        .inner-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(15, 20, 32, 0.9) 0%, rgba(30, 35, 51, 0.9) 50%, rgba(15, 20, 32, 0.9) 100%);
+            z-index: 1;
+        }
+
+        .inner-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .services-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-list-item {
+            padding: 40px 30px;
+            text-align: center;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+            transition: var(--transition);
+        }
+
+        .service-list-item:hover {
+            transform: translateY(-10px);
+            border-color: currentColor; /* fallback */
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-list-icon {
+            font-size: 3rem;
+            color: currentColor; /* fallback */
+            margin-bottom: 20px;
+        }
+
+        .service-list-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+    </style>
+
+    <link rel="icon" type="image/svg+xml" href="images/M Favicon.svg">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2X6RC6E8HT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2X6RC6E8HT');
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+            <img src="images/logo mpower.svg" alt="Mpower Garage Logo" style="height: 45px;">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="servicing.html">Servicing & MOT</a>
+            <a href="bodywork.html">Bodywork</a>
+            <a href="blogs.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <!-- Mobile-only Call Button inside Nav -->
+            <a href="tel:+447999535551" class="mobile-call-btn">
+                <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+        </div>
+        <div class="nav-contact-desktop">
+            <a href="tel:+447999535551" style="font-weight:bold; color:#fff;">
+                <i class="fa-solid fa-phone" style="color:var(--accent-primary); margin-right:5px;"></i>07999 535551
+            </a>
+            <a href="contact.html" class="btn btn-primary">Book Now</a>
+        </div>
+        <!-- Hamburger Icon -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="inner-hero">
+        <div class="inner-overlay"></div>
+        <div class="inner-content reveal"
+            style="max-width: 800px; margin: 0 auto; padding: 0 5%; position: relative; z-index: 2;">
+            <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 10px; color: #fff;">Premium <span
+                    class="text-accent">Servicing</span></h1>
+            <p class="hero-description" style="margin: 0 auto; color: #cbd5e1;">Comprehensive vehicle health checks,
+                precise
+                diagnostics, and routine maintenance to keep you safe on the road.</p>
+        </div>
+    </header>
+
+    <section class="services-list-grid">
+        <div class="service-list-item reveal">
+            <i class="fa-solid fa-oil-can service-list-icon"></i>
+            <h3 class="service-list-title">Oil & Filter Change</h3>
+            <p style="color: var(--text-secondary);">Premium grade oil replenishment and OEM-quality filter replacements
+                to protect your engine's internal components.</p>
+        </div>
+
+        <div class="service-list-item reveal" style="transition-delay: 0.1s;">
+            <i class="fa-solid fa-car-battery service-list-icon"></i>
+            <h3 class="service-list-title">Battery Replacement</h3>
+            <p style="color: var(--text-secondary);">Fast and reliable battery testing and fitment using
+                high-performance batteries for optimal start-up reliability.</p>
+        </div>
+
+        <div id="electrical" class="service-list-item reveal" style="transition-delay: 0.2s;">
+            <i class="fa-solid fa-laptop-medical service-list-icon"></i>
+            <h3 class="service-list-title">Car Diagnostics</h3>
+            <p style="color: var(--text-secondary);">Advanced computerized diagnostics to pinpoint and resolve complex
+                electrical, sensor, and ECU programming faults.</p>
+        </div>
+
+        <div id="tyres" class="service-list-item reveal" style="transition-delay: 0.3s;">
+            <i class="fa-solid fa-circle-radiation service-list-icon"></i>
+            <h3 class="service-list-title">Puncture & Tyre Repair</h3>
+            <p style="color: var(--text-secondary);">Safe, effective tyre repairs, wheel balancing, and tracking. From
+                budget to premium, we stock exactly what you need.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Repairs Info Section -->
+    <section id="repairs" style="background: var(--bg-alt); padding: 80px 5%;">
+        <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 class="section-title">Major & Minor Mechanical Repairs</h2>
+            <p class="section-subtitle" style="margin-bottom: 40px;">No job is too big or small. From complete engine
+                rebuilds to simple brake pad swaps, we do it all right here in London.</p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                <span class="btn btn-outline" style="pointer-events: none;">Engine Repairs</span>
+                <span class="btn btn-outline" style="pointer-events: none;">Brake Systems</span>
+                <span class="btn btn-outline" style="pointer-events: none;">Exhausts</span>
+                <span class="btn btn-outline" style="pointer-events: none;">Clutch Replacement</span>
+                <span class="btn btn-outline" style="pointer-events: none;">Air Conditioning</span>
+                <span class="btn btn-outline" style="pointer-events: none;">Suspension</span>
+                <span class="btn btn-outline" style="pointer-events: none;">Steering</span>
+                <span class="btn btn-outline" style="pointer-events: none;">Cambelt Kits</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="reveal">
+            <h2 class="cta-title">Book Your Next Service Today</h2>
+            <p class="cta-desc">Call us on <a href="tel:+447999535551"
+                    style="color:var(--accent-primary); font-weight:bold;">07999 535551</a> to schedule your
+                appointment.</p>
+            <a href="contact.html" class="btn btn-primary">Schedule Appointment</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="max-width: 320px;">
+                <a href="index.html" class="nav-brand" style="color: #fff; margin-bottom: 20px;">
+                    <img src="images/logo mpower.svg" alt="Mpower Garage Logo" style="height: 45px;">
+                </a>
+                <p style="color: #94a3b8; margin-bottom: 20px;">M Power Motors Limited provides top-tier vehicle repair,
+                    MOT, bodywork, and servicing in London. Reliable, affordable, and professional.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="servicing.html">MOT & Servicing</a></li>
+                    <li><a href="servicing.html#repairs">Mechanical Repairs</a></li>
+                    <li><a href="bodywork.html">Car Body Repairs</a></li>
+                    <li><a href="servicing.html#tyres">Tyres & Fitting</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i>
+                        <div><strong>M Power Motors Limited</strong><br>12 Johnsons Way,<br>London NW10 7PF</div>
+                    </li>
+                    <li><i class="fa-solid fa-phone"></i>
+                        <div><a href="tel:+447999535551">07999 535551</a></div>
+                    </li>
+                    <li><i class="fa-brands fa-whatsapp"></i>
+                        <div><a href="https://wa.me/+447999535551">WhatsApp Us</a></div>
+                    </li>
+                    <li><i class="fa-solid fa-envelope"></i>
+                        <div><a href="mailto:mpowermotorslondon@gmail.com">mpowermotorslondon@gmail.com</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <table class="hours-table">
+                    <tr>
+                        <td>Mon-Sat</td>
+                        <td>10:00 am - 7:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 M Power Motors Limited. All rights reserved. | <a href="legal.html" style="color:#94a3b8; text-decoration: underline;">Privacy Policy & Terms</a> <br><span class="design-credit" style="font-size: 0.9em; opacity: 0.6; margin-top: 8px; display: inline-block;">Designed with &#9825; by <a href="https://crunch-design.com" target="_blank" style="color: var(--accent-primary); text-decoration: none;">crunch-design.com</a></span></div>
+        </div>
+        <!-- Hidden Extreme SEO Target Block -->
+    <div class="seo-keywords" aria-hidden="true">
+        Garage in London, car repair near me, MOT testing London, tyre near me, body work in London, affordable body
+        work, affordable MOT, tyres London, car servicing NW10, engine repair near me, clutch replacement London, air
+        conditioning regas London, suspension fixing, auto electrics London, wheel alignment near me, mechanics NW10,
+        reliable auto repair shop, local garage, London car mechanics, cheap garage services, fast car repair, mobile
+        mechanic London, car service center, timing belt replacement, brake pad replacement London, alternator repair,
+        full car service, smart body repair, dent removal London, bumper repair near me, scratch repair London, paint
+        correction London, cheap tyres online, puncture repair, winter tyres fitting, exhaust repair London, DPF
+        replacement, check engine light diagnostics, battery replacement London, gear box fix, headgasket repair, auto
+        electrical specialist, hybrid car repair near me, MOT and service packages, vehicle health check, fleet
+        maintenance London, commercial vehicle repairs London, 24 hour car drop off, same day car repair, trusted local
+        mechanic, M Power Motors London, mpowermotors, mpower, m power motors, m power motors limited, power motors limited, mpower motors limited, mpower motors m powermotors, m power motors london, m power garage, MP Motors London Ltd, car dealership, car repair, paint, battery, MOT, cheapest mot, 5000 customer reviews, highest rated, mpowermotors.co.uk.
+    </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <a href="https://wa.me/+447999535551" target="_blank" class="fab fab-whatsapp" aria-label="Chat on WhatsApp"><i
+                class="fa-brands fa-whatsapp"></i></a>
+        <a href="tel:+447999535551" class="fab fab-call" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
